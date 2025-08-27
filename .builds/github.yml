@@ -2,7 +2,7 @@ image: alpine/latest
 secrets:
   - de4d7db1-fa49-440f-b6d1-ddfb0e4a8000
 sources:
-  - git+ssh://git@git.sr.ht/~ducmbui/www
+  - git+ssh://git@git.sr.ht/~ducmbui/ducmbui.com
 tasks:
   - mirror-to-github: |
       cd ~/www
