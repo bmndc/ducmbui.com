@@ -1,0 +1,22 @@
+baseURL: https://ducmbui.com/
+theme: no-style-please
+
+copyright: 'CC-BY-4.0'
+
+params:
+  theme_config:
+    back_home_text: "← Back to main page"
+    isShowFooter: false
+
+defaultContentLanguage: en
+languages:
+  en:
+    languageCode: "en-GB"
+    languageName: "English"
+    title: "duc's personal site"
+    weight: 1
+  vi:
+    languageName: "Tiếng Việt"
+    title: "trang cá nhân của đức"
+    contentDir: "content/vi"
+    weight: 2
