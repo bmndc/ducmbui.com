@@ -2,7 +2,7 @@
 title: "Dylan M. Lewis"
 layout: page
 ---
-{{< img src="images/dylan.jpeg" alt="Dylan smiling in a grinning way, taken from Sophia Tung's 'This is where all of the Internet is stored' YouTube video" title="isn't he handsome???" width="120" align="right" style="margin-top:-4rem;margin-left:1rem;" >}}
+{{< img src="images/dylan.jpeg" alt="Dylan smiling in a grinning way, taken from Sophia Tung's 'This is where all of the Internet is stored' YouTube video" title="isn't he handsome???" width="120" align="right" style="margin-top:-4rem; margin-left:1rem; border-radius:50%;" >}}
 
 ## about
 Born in 2001, Dylan studied at Clayton Valley High School between 2015–2019 and was a San Jose State University ‘24 graduate. He holds a Bachelor of Science in Computer Network System Management and Cyber Security, with a Business minor, and received the Dean’s Scholars title.
@@ -11,9 +11,9 @@ Before joining the microfiche digitisation team at Internet Archive as a full-ti
 
 He has experience in using Python, the React framework, MySQL, and AWS, and excels in cybersecurity and problem-solving. He prides himself on being a well-rounded team player who adapts quickly and has great work ethic and communication skills.
 
-On the Internet Archive’s live stream, he usually wears a brown or red hoodie, a dark T-shirt and grey pant, a yellow beanie hat, black headphones, and is extremely focused on the fiche scanning work. Dare I say he’s an introvert? But don’t let that fool you, he’s quite friendly and open to discuss the matters he has knowledge on (like simping and doing OSINT on him). He also vibes to music and stretches his body from time to time.
+On the Internet Archive’s live stream, he usually wears a brown or red hoodie, a dark T-shirt and yellow pant, a grey beanie hat, black headphones, and is extremely focused on the fiche scanning work. Dare I say he’s an introvert? But don’t let that fool you, he’s quite friendly and open to discuss the matters he has knowledge on (like doing OSINT on him). He also vibes to music and stretches his body from time to time.
 
-Dylan dreams of working in NASA and Valve.
+In his free time, Dylan likes climbing. He dreams of working in NASA and Valve.
 
 ## online presence
 - Internet Archive: https://archive.org/details/@associate-dylan-l (7:30a–3:30p PT)
