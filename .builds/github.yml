@@ -6,6 +6,8 @@ sources:
   - git+ssh://git@git.sr.ht/~ducmbui/ducmbui.com
 tasks:
   - mirror-to-github: |
+      eval "$(ssh-agent -s)"
+      ssh-add ~/.ssh/de4d7db1-fa49-440f-b6d1-ddfb0e4a8000
       cd ~/ducmbui.com
       ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
       git remote add github git@github.com:bmndc/www.git
