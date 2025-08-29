@@ -3,4 +3,4 @@
 	url = https://github.com/hanwenguo/hugo-theme-nostyleplease.git
 [submodule "content"]
 	path = content
-	url = https://git.sr.ht/~ducmbui/content
+	url = git@git.sr.ht:~ducmbui/content

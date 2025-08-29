@@ -1,6 +1,7 @@
 image: alpine/latest
 secrets:
   - de4d7db1-fa49-440f-b6d1-ddfb0e4a8000
+  - 917292d5-3c31-4abe-84bd-643d862b86d5
 sources:
   - git+ssh://git@git.sr.ht/~ducmbui/ducmbui.com
 tasks:
