@@ -1,7 +1,5 @@
 image: alpine/edge
 oauth: pages.sr.ht/PAGES:RW
-secrets:
-  - 917292d5-3c31-4abe-84bd-643d862b86d5
 packages:
   - hugo
   - hut
