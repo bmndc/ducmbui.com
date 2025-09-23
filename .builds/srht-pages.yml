@@ -6,16 +6,13 @@ packages:
   - hut
 environment:
   site: ducmbui.com
-  PATH: $(ruby -e 'puts Gem.user_dir')/bin:$PATH
 tasks:
   - install-bundler: |
-      echo 'export PATH=$(ruby -e 'puts Gem.user_dir')/bin:$PATH' >> ~/.buildenv
-      source ~/.buildenv
-      gem install --user-install bundler
+      sudo gem install bundler
   - build: |
       cd $site
-      bundle install
-      bundle exec jekyll build
+      sudo bundle install
+      sudo bundle exec jekyll build
   - package: |
       cd $site/_site
       tar -cvz . > ../../site.tar.gz
