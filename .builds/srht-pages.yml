@@ -6,11 +6,10 @@ packages:
   - hut
 environment:
   site: ducmbui.com
-  BUNDLE_PATH: $HOME/gems
 tasks:
   - install-bundler: |
-      export PATH=$HOME/gems/bin:$PATH
-      gem install bundler
+      export PATH=$(ruby -e 'puts Gem.user_dir')/bin:$PATH
+      gem install --user-install bundler
   - build: |
       cd $site
       sudo bundle install
