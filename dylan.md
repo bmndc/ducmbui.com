@@ -1,6 +1,7 @@
 ---
 title: "Dylan M. Lewis"
 layout: page
+permalink: /dylan/
 ---
 <img src="assets/images/dylan.jpeg" alt="Dylan smiling in a grinning way, taken from Sophia Tung's 'This is where all of the Internet is stored' YouTube video" title="isn't he handsome???" width="120" align="right" style="margin-top:-4rem; margin-left:1rem; border-radius:50%;">
 
