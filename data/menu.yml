@@ -1,6 +1,0 @@
-entries:
-  - title: <strong>[all posts]</strong>
-    post_list:
-      limit: 3
-      show_more: true
-      show_more_text: "more!"

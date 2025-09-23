@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: "en" }}">
+	{%- include head.html -%}
+	<body a="{{ site.theme_config.appearance | default: "auto" }}">
+		<a class="skip" href="#content">Skip to main content</a>
+
+		<div class="w">
+			{% if site.theme_config.always_show_header or page.layout == "home" %}
+				{%- include home_header.html -%}
+			{% endif %}
+
+			<main id="content" aria-label="Content">
+				{{ content }}
+			</main>
+		</div>
+
+		{%-if site.goat_counter and jekyll.environment == "production"-%}
+			{%-include goat_counter.html-%}
+		{%-endif-%}
+
+		{% if page.custom_js %}
+			{% for js_file in page.custom_js %}
+				<script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
+			{% endfor %}
+		{% endif %}
+	</body>
+</html>

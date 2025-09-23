@@ -2,7 +2,7 @@
 title: "Dylan M. Lewis"
 layout: page
 ---
-{{< img src="images/dylan.jpeg" alt="Dylan smiling in a grinning way, taken from Sophia Tung's 'This is where all of the Internet is stored' YouTube video" title="isn't he handsome???" width="120" align="right" style="margin-top:-4rem; margin-left:1rem; border-radius:50%;" >}}
+<img src="assets/images/dylan.jpeg" alt="Dylan smiling in a grinning way, taken from Sophia Tung's 'This is where all of the Internet is stored' YouTube video" title="isn't he handsome???" width="120" align="right" style="margin-top:-4rem; margin-left:1rem; border-radius:50%;">
 
 ## about
 Born in 2001, Dylan studied at Clayton Valley High School between 2015–2019 and was a San Jose State University ‘24 graduate. He holds a Bachelor of Science in Computer Network System Management and Cyber Security, with a Business minor, and received the Dean’s Scholars title.

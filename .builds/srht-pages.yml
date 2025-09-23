@@ -1,14 +1,20 @@
-image: alpine/edge
+image: debian/stable
 oauth: pages.sr.ht/PAGES:RW
 packages:
-  - hugo
+  - ruby-full
+  - ruby-dev
   - hut
 environment:
   site: ducmbui.com
 tasks:
-  - package: |
+  - install-bundler: |
+      sudo gem install bundler
+  - build: |
       cd $site
-      hugo
-      tar -C public -cvz . > ../site.tar.gz
+      bundle install
+      bundle exec jekyll build
+  - package: |
+      cd $site/_site
+      tar -cvz . > ../../site.tar.gz
   - upload: |
       hut pages publish -d $site site.tar.gz

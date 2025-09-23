@@ -1,0 +1,7 @@
+entries:
+  - title: <strong>recent blog posts</strong>
+    post_list:
+      limit: 3
+      show_more: true
+      show_more_text: "all posts &rarr;"
+      show_more_url: "/blog"
