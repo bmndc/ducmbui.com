@@ -12,8 +12,8 @@ tasks:
       gem install --user-install bundler
   - build: |
       cd $site
-      sudo bundle install
-      sudo bundle exec jekyll build
+      bundle install
+      bundle exec jekyll build
   - package: |
       cd $site/_site
       tar -cvz . > ../../site.tar.gz
