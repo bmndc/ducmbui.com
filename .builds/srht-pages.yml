@@ -9,6 +9,8 @@ environment:
   PATH: $(ruby -e 'puts Gem.user_dir')/bin:$PATH
 tasks:
   - install-bundler: |
+      echo 'export PATH=$(ruby -e 'puts Gem.user_dir')/bin:$PATH' >> ~/.buildenv
+      source ~/.buildenv
       gem install --user-install bundler
   - build: |
       cd $site
