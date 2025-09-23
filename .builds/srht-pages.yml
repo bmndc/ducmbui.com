@@ -6,9 +6,9 @@ packages:
   - hut
 environment:
   site: ducmbui.com
+  PATH: $(ruby -e 'puts Gem.user_dir')/bin:$PATH
 tasks:
   - install-bundler: |
-      export PATH=$(ruby -e 'puts Gem.user_dir')/bin:$PATH
       gem install --user-install bundler
   - build: |
       cd $site
