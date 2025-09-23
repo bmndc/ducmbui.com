@@ -6,13 +6,15 @@ packages:
   - hut
 environment:
   site: ducmbui.com
+  BUNDLE_PATH: $HOME/gems
 tasks:
   - install-bundler: |
-      sudo gem install bundler
+      export PATH=$HOME/gems/bin:$PATH
+      gem install bundler
   - build: |
       cd $site
-      bundle install
-      bundle exec jekyll build
+      sudo bundle install
+      sudo bundle exec jekyll build
   - package: |
       cd $site/_site
       tar -cvz . > ../../site.tar.gz
