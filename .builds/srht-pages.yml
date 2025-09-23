@@ -8,7 +8,7 @@ environment:
   site: ducmbui.com
 tasks:
   - install-bundler: |
-      sudo gem install bundler
+      gem install bundler
   - build: |
       cd $site
       bundle install
