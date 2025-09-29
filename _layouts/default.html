@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: "en" }}">
-	{%- include head.html -%}
-	<body a="{{ site.theme_config.appearance | default: "auto" }}">
-		<a class="skip" href="#content">Skip to main content</a>
+<html lang="{{ page.lang | default: "en" }}" a="{{ site.theme_config.appearance | default: "auto" }}">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<div class="w">
-			{% if site.theme_config.always_show_header or page.layout == "home" %}
-				{%- include home_header.html -%}
-			{% endif %}
-
-			<main id="content" aria-label="Content">
-				{{ content }}
-			</main>
-		</div>
-
-		{%-if site.goat_counter and jekyll.environment == "production"-%}
-			{%-include goat_counter.html-%}
-		{%-endif-%}
-
-		{% if page.custom_js %}
-			{% for js_file in page.custom_js %}
-				<script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ js_file }}.js"></script>
-			{% endfor %}
+	<title>
+		{% if page.title %}
+			{{ page.title }}
+		{% else %}
+			{{ site.title }}
 		{% endif %}
-	</body>
+	</title>
+
+	{%-seo title=false-%}
+	{%-feed_meta-%}
+
+	<link rel="shortcut icon" type="image/x-icon" href="{{ site.favicon | relative_url }}" />
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+</head>
+<body>
+	<a class="skip" href="#content">Skip to main content</a>
+
+	{{ content }}
+
+	{% if page.javascript %}
+		{% for script in page.javascript %}
+			<script type="text/javascript" src="{{ site.baseurl }}/assets/js/{{ script }}.js"></script>
+		{% endfor %}
+	{% endif %}
+</body>
 </html>

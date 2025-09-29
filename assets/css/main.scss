@@ -1,4 +1,71 @@
 ---
 ---
 
-@use "{{ site.theme }}";
+@use "variables";
+
+html {
+	background-color: var(--background-color);
+}
+
+body {
+	max-width: 45rem;
+	margin: 8px auto;
+	padding-left: 8px;
+	padding-right: 8px;
+	font-family: variables.$font-family;
+	color: var(--text-color);
+	line-height: 1.4;
+}
+
+menu {
+	list-style-type: "|";
+	padding: 0;
+}
+
+menu li {
+	display: inline-block;
+	margin-right: 2px;
+}
+
+h1, h2, h3 {
+	font-size: 1em;
+}
+
+a {
+	color: var(--link-color);
+}
+
+a:hover {
+	text-decoration: none;
+	background-color: var(--link-color);
+	color: var(--background-color);
+}
+
+pre {
+	overflow-x: auto;
+}
+
+.skip {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.skip:focus {
+	opacity: 1;
+}
+
+.language-diff .gd {
+	color: var(--gd-color);
+}
+
+.language-diff .gi {
+	color: var(--gi-color);
+}
+
+.language-diff .p {
+	position: sticky;
+	left: 0;
+	color: grey;
+}

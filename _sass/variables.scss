@@ -1,0 +1,28 @@
+$font-family: Helvetica, Arial, sans-serif;
+
+:root {
+	--background-color: white;
+	--text-color: black;
+	--link-color: blue;
+	--gd-color: red;
+	--gi-color: green;
+}
+
+@mixin dark-appearance {
+	// Colour palette for dark mode
+	--background-color: #121212;
+	--text-color: white;
+	--link-color: yellow;
+	--gd-color: red;
+	--gi-color: lightgreen;
+}
+
+html[a="dark"] {
+	@include dark-appearance;
+}
+
+@media (prefers-color-scheme: dark) {
+	html:not([a="light"]) {
+		@include dark-appearance;
+	}
+}

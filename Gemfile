@@ -5,6 +5,7 @@ source "https://rubygems.org"
 gem "jekyll"
 gem "jekyll-feed"
 gem "jekyll-seo-tag"
+gem "jekyll-titles-from-headings", "~> 0.5.3"
 
 group :development do
   gem "webrick"
@@ -14,5 +15,3 @@ group :development do
   gem "logger"
   gem "rake"
 end
-
-gemspec
