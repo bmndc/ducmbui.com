@@ -1,5 +1,7 @@
 {%- if include.category -%}
   	{%- assign posts = site.categories[include.category] | sort: 'date' | reverse -%}
+{%- elsif include.year -%}
+	{%- assign posts = site.posts | where_exp: "post", "post.date contains include.year" | sort: 'date' | reverse -%}
 {%- else -%}
 	{%- assign posts = site.posts | sort: 'date' | reverse -%}
 {%- endif -%}

@@ -1,0 +1,4 @@
+---
+layout: archive
+---
+# all posts

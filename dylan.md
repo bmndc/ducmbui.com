@@ -6,6 +6,7 @@ permalink: /dylan/
 <img src="/assets/images/dylan.jpeg" alt="Dylan smiling in a grinning way, taken from Sophia Tung's 'This is where all of the Internet is stored' YouTube video" title="isn't he handsome???" width="120" align="right" style="margin-top:-4rem; margin-left:1rem; border-radius:50%;">
 
 ## about
+
 Born in 2001, Dylan studied at Clayton Valley High School between 2015–2019 and was a San Jose State University ‘24 graduate. He holds a Bachelor of Science in Computer Network System Management and Cyber Security, with a Business minor, and received the Dean’s Scholars title.
 
 Before joining the microfiche digitisation team at Internet Archive as a full-time on-site Day Shift Lead Technician in April 2025, he was a Cybersecurity Teaching Assistant at the Bay Area Cyber League in the summer of 2022, an on-site Technical Support Intern briefly in the spring of 2024, and a web developer at the Urban Forest Ecosystem Institute between 2023–2024.
@@ -17,6 +18,7 @@ On the Internet Archive’s live stream, he usually wears a brown or red hoodie,
 In his free time, Dylan likes climbing. He dreams of working in NASA and Valve.
 
 ## online presence
+
 - Internet Archive: https://archive.org/details/@associate-dylan-l (7:30a–3:30p PT)
 - LinkedIn: https://www.linkedin.com/in/dylanlewis-/
 - GitHub: https://github.com/GarkLlygad/

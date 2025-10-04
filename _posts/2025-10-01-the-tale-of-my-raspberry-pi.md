@@ -1,10 +1,10 @@
 ---
 layout: post
-category: blog
+category: raspberry-pi
 ---
 # the tale of my Raspberry Pi
 
-(Part 1 of a four-plus-part story on how I got a Raspberry Pi and set it up to be my personal server for self-hosting services.)
+(Part 1 of a six-plus-part story on how I got a Raspberry Pi and set it up to be my personal server for self-hosting services.)
 
 I was on top of the world when I got my first Raspberry Pi about three years ago.
 
@@ -18,15 +18,13 @@ Alas, since then I used the Pi for other things than I intended: [converting it 
 
 More recently, I stumbled across [this Hacker News comment] about using [ArchiveTeam's Warrior tool] to preserve links on the Internet from being inaccessible (called link rot). My interest suddenly got piqued by supporting the team's effort and running a version of Warrior on a spare computer at home. The Pi came to my mind first, but I soon came aware that [the Warrior tool is preserved for `amd64` desktop computers] and I cannot run it on my Pi.
 
-Nonetheless, by the sheer of luck, I learned about Docker and the self-hosting community, the people who don't want to be bounded by the Terms of Services placed upon by some massive companies.
+Nonetheless, I learned about Docker and the self-hosting community, the people who don't want to be bounded by the Terms of Services placed upon by some massive companies.
 
 I had been hosting my website on GitHub Pages, before moving it to Sourcehut. However, having the website on a third-party service meant I'm limited to what that service allows me to do. [Sourcehut, for example], prohibits loading scripts and styles from <abbr title="Content Delivery Networks, a.k.a. centrally hosted files">CDNs</abbr> or having the content of the site over 1GB in size. _(well, I try not to use JavaScript on this website, nor is it that big now... anyway)_
 
 And so begins my journey of moving my personal website to a self-hosted web server of my own, plus maybe a password manager and an internal VPN between my devices.
 
-_(editor's note: at this point, this multi-part blog story turns into a guide that you can follow along)_
-
-## Notes on installing 64-bit Arch Linux ARM on Pi 4 and overclocking
+## Notes on [installing 64-bit Arch Linux ARM on Pi 4] and overclocking
 
 I shouldn't say the process went smoothly, otherwise this wouldn't be a multi-part story :/
 
@@ -93,5 +91,6 @@ If you have any ideas on running ArchiveTeam's Warrior tool on a Raspberry Pi (I
 [ArchiveTeam's Warrior tool]: https://wiki.archiveteam.org/index.php/ArchiveTeam_Warrior
 [the Warrior tool is preserved for `amd64` desktop computers]: https://wiki.archiveteam.org/index.php/ArchiveTeam_Warrior#Can_I_run_the_Warrior_on_ARM_or_some_other_unusual_architecture?
 [Sourcehut, for example]: https://srht.site/limitations/
+[installing 64-bit Arch Linux ARM on Pi 4]: https://archlinuxarm.org/platforms/armv8/broadcom/raspberry-pi-4
 [as a member pointed out on the Arch Linux ARM forum]: https://archlinuxarm.org/forum/viewtopic.php?f=67&t=15422&start=20#p67299
 [the overclocking instructions on Raspberry Pi Official Magazine]: https://magazine.raspberrypi.com/articles/how-to-overclock-raspberry-pi-4

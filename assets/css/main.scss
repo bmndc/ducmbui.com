@@ -41,6 +41,20 @@ a:hover {
 	color: var(--background-color);
 }
 
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+figcaption {
+	font-size: 0.875em;
+	text-align: left;
+}
+
 pre {
 	overflow-x: auto;
 }
