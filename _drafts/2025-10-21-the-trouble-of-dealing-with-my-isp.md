@@ -6,7 +6,7 @@ category: raspberry-pi
 
 Part 2: I got nervous getting a public IPv4 address from my <abbr title="Internet Service Provider">ISP</abbr>, and protecting my Pi from the port attackers out there.
 
-This year, I decided to purchase a domain to, maybe, have a nice little corner on the Internet. I chose this .com domain and paid a little over 11 U.S. bucks (around 270.000 VND at the time). At first, I set the domain to point to my GitHub Pages (and later Sourcehut Pages) as I was scared to embrace the idea of getting a public IP address at the time.
+This year, I decided to purchase a domain to, maybe, have a nice little corner on the Internet. I chose this .com domain and paid a little over 11 U.S. bucks (around 270.000 VND at the time, more on this later). At first, I set the domain to point to my GitHub Pages (and later Sourcehut Pages) as I was scared to embrace the idea of getting a public IP address at the time.
 
 Because of [Internet of Things] and every Internet-connected appliance having to be assigned an IP address, companies around the world have bought every public-facing IPv4 address blocks available from ICANN (public-facing, accounting about 580 million reserved addresses.) IPv4 addresses, the ones with four blocks of 0 through 255, [have pretty much run out]. To combat this issue, ISPs have been placing people behind what are called Carrier-Grade <abbr title="Network Address Translation">NAT</abbr>s ([CG-NATs]). Think of them as massive routers: each group of devices is only assigned a public-facing IP address.
 

@@ -59,6 +59,11 @@ pre {
 	overflow-x: auto;
 }
 
+hr {
+	border: none;
+	border-top: medium dotted currentColor;
+}
+
 .skip {
 	position: absolute;
 	top: 0;

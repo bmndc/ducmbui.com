@@ -1,9 +1,10 @@
 title: "Duc's website" # name of the site
 author: "Bùi Minh Đức" # name of site's author
+email: "duc (at) ducmbui.com" # email address of the author
 url: https://ducmbui.com # root address of the site
 baseurl: "" # subpath of the site, e.g. "/blog" (leave it blank "" if your site shouldn't use a subpath)
 description: > # description of the site (multiple lines allowed)
-  A (nearly) no-CSS, fast, minimalist Jekyll theme.
+  Personal website and blog of a student, lousy programmer, tooter, Redditor and YouTube addict.
 
 permalink: /:slug.html
 

@@ -10,13 +10,13 @@
 	<ul>
 		{%- for post in posts limit: include.limit -%}
 			<li>
-				<span>
+				<time datetime="{{ post.date | date_to_xmlschema }}">
 				{% if site.theme_config.date_format %}
 					{{ post.date | date: site.theme_config.date_format }}
 				{% else %}
 					{{ post.date | date: "%Y-%m-%d" }}
 				{% endif %}
-				</span>
+				</time>
 				<a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
 			</li>
 		{%- endfor -%}

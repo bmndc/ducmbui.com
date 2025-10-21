@@ -5,6 +5,8 @@ Student, lousy programmer, tooter, Redditor and YouTube addict. [$(whoami)](/abo
 
 ## recent blog posts
 
+[RSS feed](/feed.xml)
+
 {% include post_list.html
 		limit=6
 		show_more_text="all posts"
@@ -12,6 +14,8 @@ Student, lousy programmer, tooter, Redditor and YouTube addict. [$(whoami)](/abo
 -%}
 
 ## what I'm probably working on
+
+October 2025:
 
 - Set up and self-host services on my own domain
 - Develop a [revival fork of Mammoth](https://git.sr.ht/~ducmbui/mammoth), a Mastodon client for Apple devices
@@ -32,6 +36,7 @@ I'm **ducmbui** (sometimes with a 2) most places online. If you find me elsewher
 - [GitLab](https://gitlab.com/ducmbui)
 - [Sourcehut](https://git.sr.ht/~ducmbui)
 - [Mastodon](https://toot.community/@duc){: rel="me"} (bridged via fed.brid.gy to [Bluesky](https://bsky.app/profile/did:plc:dahvph3xzocj4eeddlevdtv7))
+- [Bluesky](https://bsky.app/profile/ducmbui.bsky.social)
 - [Twitter](https://twitter.com/ducmbui2)
 - [Instagram/Threads](https://threads.com/@ducmbui2)
 - [LinkedIn](https://www.linkedin.com/in/ducmbui)
@@ -43,12 +48,14 @@ I'm **ducmbui** (sometimes with a 2) most places online. If you find me elsewher
 - [Internet Archive](https://archive.org/details/@ducmbui)
 - [Steam](https://steamcommunity.com/id/ducmbui)
 
-You can also send me an e-mail at *duc (at) ducmbui.com*.
+You can also send me an e-mail at *{{ site.email }}*.
 
 ## privacy
 
 To serve you the website content and for analytic purposes, `nginx` collects your IP address, the URL you're visiting on this website, and the date and time (in UTC) you're visiting at. For security reasons, `ufw` also creates a log of all traffic to the domain.
 
 Other than mentioned above, this website doesn't use cookies, nor do I share the logs elsewhere.
+
+---
 
 Content on this website is under the Creative Commons Attribution 4.0 International (CC-BY-4.0) licence, unless otherwise noted.

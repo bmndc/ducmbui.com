@@ -1,16 +1,19 @@
 ---
 layout: post
 category: raspberry-pi
+last_modified_date: 2025-10-06
 ---
 # the tale of my Raspberry Pi
 
-(Part 1 of a six-plus-part story on how I got a Raspberry Pi and set it up to be my personal server for self-hosting services.)
+(Part 1 of a five-plus-part story on my experience of getting a Raspberry Pi and setting it up to be my personal server for self-hosting services.)
 
 I was on top of the world when I got my first Raspberry Pi about three years ago.
 
 Probably because the Pis were (and still are) ever so costly to buy here with our current exchange rate, to the point that I had to save up my allowance to get one. Or perhaps there were no micro-electronic hardware stores on Tran Dai Nghia St. that were selling genuine Pis at the time, and mine had to be delivered from one of the approved distributors in Ho Chi Minh City. Or maybe I was getting a Pi at [the worst time of the global Pi supply shortage].
 
 But most importantly, I was watching [Rob's YouTube videos] on using a Raspberry Pi as a companion computer for the iPad. Rob was able to power his Raspberry Pi 4 with his iPad Pro and a Thunderbolt USB-C cable, and open a <abbr title="Secure Shell">SSH</abbr> on the Pi over that USB-C connection. I dreamed of a day when I can carry my iPad and the Pi around and work anywhere I want.
+
+<!-- TODO: something about the state of getting a Pi here? -->
 
 It was until I realised that I should've got a personal laptop instead of having my goldfish memory remember to bring the USB-C cable.
 
@@ -80,7 +83,7 @@ gpu_freq=750
 
 ---
 
-If you have any ideas on running ArchiveTeam's Warrior tool on a Raspberry Pi (I'd rather not go through emulation), or just want to correct my use of the word "but", feel free to send me an e-mail or mention me on Mastodon!
+If you have any ideas on running ArchiveTeam's Warrior tool on a Raspberry Pi (I'd rather not go through emulation), or just want to correct my use of the word "but", feel free to send me an e-mail, discuss on GitHub or mention me on Mastodon!
 
 [the worst time of the global Pi supply shortage]: https://www.raspberrypi.com/news/production-and-supply-chain-update/
 [Rob's YouTube videos]: https://www.youtube.com/playlist?list=PLRiHAWwt3g5Nz9Vv0Nd6VbSsiPfQccOPA
