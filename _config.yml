@@ -39,3 +39,5 @@ defaults:
       type: "posts"
     values:
       permalink: /blog/:year/:month/:day/:title:output_ext
+      title: ""
+      layout: post

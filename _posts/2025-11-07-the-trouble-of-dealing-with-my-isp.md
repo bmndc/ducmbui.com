@@ -1,6 +1,5 @@
 ---
-layout: post
-category: raspberry-pi
+category: article
 ---
 # the trouble of dealing with my ISP
 
@@ -8,7 +7,7 @@ Part 2: I got nervous getting a public IPv4 address from my <abbr title="Interne
 
 This year, I decided to purchase a domain to, maybe, have a nice little corner on the Internet. I chose this .com domain and paid a little over 11 U.S. bucks (around 270.000 VND at the time, more on this later). At first, I set the domain to point to my GitHub Pages (and later Sourcehut Pages) as I was scared to embrace the idea of getting a public IP address at the time.
 
-Because of [Internet of Things] and every Internet-connected appliance having to be assigned an IP address, companies around the world have bought every public-facing IPv4 address blocks available from ICANN (public-facing, accounting about 580 million reserved addresses.) IPv4 addresses, the ones with four blocks of 0 through 255, [have pretty much run out]. To combat this issue, ISPs have been placing people behind what are called Carrier-Grade <abbr title="Network Address Translation">NAT</abbr>s ([CG-NATs]). Think of them as massive routers: each group of devices is only assigned a public-facing IP address.
+Because of [Internet of Things] and every Internet-connected appliance having to be assigned an IP address, companies around the world have bought every public-facing IPv4 address blocks available from ICANN (public-facing, accounting about 580 million reserved addresses.) IPv4 addresses, the ones with four blocks of 0 through 255, [have pretty much run out]. To combat this issue, ISPs have been placing people behind what are called Carrier-Grade <abbr title="Network Address Translation">NAT</abbr>s ([CG-NAT]). Think of them as massive routers: each group of devices is only assigned a public-facing IP address.
 
 (I know I did some massive simplification there, because often companies don't reserve IP address blocks directly from ICANN but from their regional Internet address registries, such as APNIC. Also, people are embracing the IPv6 address standard, which holds a serviceable, virtually infinite number of IP addresses to assign to devices.)
 
@@ -42,25 +41,38 @@ Then my phone rang.
 
 I was too nervous to call their support number, so I opened a service support ticket in the app in the hope that they would understand the situation.
 
-> "I've assigned a new IP address to your modem. Please wait for a minute or two and check if you're on the new public IP address."
+> "I've assigned a new IP address to your modem. Please hold for a minute or two and check if you're on the new public IP address."
 
-That was quick. Maybe I'm just an introvert guy who was shy to take calls from strangers, and I was overthinking for a bit. Or I was making a request at 11.30 in the night and the support man wanted to get things done as quick as possible.
+That was quick. Maybe I'm just an introvert guy who was shy to take calls from strangers, and I was overthinking for a bit. Or I was making a request at 11:30 in the night and the support man wanted to get things done as quick as possible.
 
 But as I refreshed the modem dashboard and ran the command again on my Pi, the IP addresses became matching with each other. I jumped. I couldn't think it was as simple as that.
 
 ## Shell my Pi securely from port 22 and other port attack
 
-I remember watching a YouTube video on finding Chinese scam websites and attacking common open ports of their servers. Unfortunately I wasn't able to trace back that video to link here (possibly from [Eric Parker] or [John Hammond]? please @ me if you can find it!)
+I remember watching a YouTube video on finding Chinese scam websites and attacking common open ports of their servers. Unfortunately I wasn't able to trace back that video to link here (possibly from [John Hammond]?)
 
-It's not difficult, nonetheless, to find incidents where hackers gain unauthorised access to servers, as the maintainers of those servers did little to no effort to implement any protective measures, such as closing port 22, which is often exposed for remote access over SSH, or only lock SSH access behind a layer of password.
+It's not difficult, nonetheless, to find incidents where hackers gain unauthorised access to servers, as the maintainers of those servers did little to no effort to implement any protective measures, such as closing port 22, which is often exposed for remote access over SSH, or only locking SSH access behind a layer of password.
 
-Keeping that in mind, on the Pi, I installed `ufw` and configured it to block all external access into all ports, except port 22 for SSH, which I limited access to devices within the local network only, port 80 and 443 for the Nginx web server, and
+Keeping that in mind, on the Pi, I installed Uncomplicated Firewall (`ufw`) and configured it to block all external access into all ports, except port 22 for SSH, which I restricted access to devices within my local network only, port 80 and 443 for the Nginx web server; and set up SSH to authenticate using public-private key verification.
+
+`ufw` acts as an abstraction layer and uses either `iptables` or `nftables` as the back-end firewall.
+
+I made sure to disable any other firewall services in place, then followed the [ArchWiki entry for `ufw`], which instructed me to install the `ufw` package, enable the `systemd` service, and enable the firewall.
+
+## I got lucky
+
+I can now rest easy knowing I can start building my presence on the web. But another day I shared this story on a call with a fellow developer, who lives in a shared apartment. And for him, things didn't turn out as easy as I thought they would be.
+
+In shared apartments, an ISP usually signs a contract with the construction project owner to provide their Internet service for the entire apartment. He's stuck with whichever ISP providing the service there. It took a lot of time before he was given the credential to access the modem by a service repairman, and he was denied permission to have a public IP address, due to the way it was set up that could affect the Internet security of the entire apartment.
+
+You might have better chance at this if you live in a house, I guess.
 
 [Internet of Things]: https://en.wikipedia.org/wiki/Internet_of_things
 [have pretty much run out]: https://en.wikipedia.org/wiki/IPv4_address_exhaustion
-[CG-NATs]: https://en.wikipedia.org/wiki/Carrier-grade_NAT
+[CG-NAT]: https://en.wikipedia.org/wiki/Carrier-grade_NAT
 [WebSocket POST calls]: https://github.com/juanfont/headscale/issues/1468
 [One comment from @realrookie001]: https://www.threads.com/@realrookie001/post/DNgQTCJyaUr
 [@ducmaster01 assured me]: https://www.threads.com/@ducmaster01/post/DNfb7wCzwSj
 [Eric Parker]: https://www.youtube.com/@EricParker
 [John Hammond]: https://www.youtube.com/@_JohnHammond
+[ArchWiki entry for `ufw`]: https://wiki.archlinux.org/title/Uncomplicated_Firewall

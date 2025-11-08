@@ -4,7 +4,7 @@
 @use "variables";
 
 html {
-	background-color: var(--background-color);
+	background: var(--background-color);
 }
 
 body {
@@ -38,7 +38,7 @@ a {
 a:hover {
 	text-decoration: none;
 	background-color: var(--link-color);
-	color: var(--background-color);
+	color: var(--link-hover-text-color);
 }
 
 img {
@@ -59,9 +59,12 @@ pre {
 	overflow-x: auto;
 }
 
-hr {
-	border: none;
-	border-top: medium dotted currentColor;
+abbr {
+	cursor: help;
+}
+
+.metadata {
+	color: var(--text-secondary-color);
 }
 
 .skip {

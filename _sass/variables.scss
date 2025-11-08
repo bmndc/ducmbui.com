@@ -1,18 +1,23 @@
 $font-family: Helvetica, Arial, sans-serif;
 
 :root {
-	--background-color: #fdfdfd;
+	// Colour palette for light mode
+	--background-color: white;
 	--text-color: black;
+	--text-secondary-color: #505050;
 	--link-color: blue;
+	--link-hover-text-color: white;
 	--gd-color: red;
 	--gi-color: green;
 }
 
 @mixin dark-appearance {
 	// Colour palette for dark mode
-	--background-color: #121212;
+	--background-color: black;
 	--text-color: white;
+	--text-secondary-color: darkgrey;
 	--link-color: yellow;
+	--link-hover-text-color: black;
 	--gd-color: red;
 	--gi-color: lightgreen;
 }

@@ -1,19 +1,16 @@
 ---
-layout: post
-category: raspberry-pi
-last_modified_date: 2025-10-06
+category: article
+last_modified_at: 2025-11-08
 ---
 # the tale of my Raspberry Pi
 
-(Part 1 of a five-plus-part story on my experience of getting a Raspberry Pi and setting it up to be my personal server for self-hosting services.)
+Part 1 of a three-plus-part story on my experience of getting a Raspberry Pi and setting it up to be my personal server for self-hosting services.
 
 I was on top of the world when I got my first Raspberry Pi about three years ago.
 
 Probably because the Pis were (and still are) ever so costly to buy here with our current exchange rate, to the point that I had to save up my allowance to get one. Or perhaps there were no micro-electronic hardware stores on Tran Dai Nghia St. that were selling genuine Pis at the time, and mine had to be delivered from one of the approved distributors in Ho Chi Minh City. Or maybe I was getting a Pi at [the worst time of the global Pi supply shortage].
 
 But most importantly, I was watching [Rob's YouTube videos] on using a Raspberry Pi as a companion computer for the iPad. Rob was able to power his Raspberry Pi 4 with his iPad Pro and a Thunderbolt USB-C cable, and open a <abbr title="Secure Shell">SSH</abbr> on the Pi over that USB-C connection. I dreamed of a day when I can carry my iPad and the Pi around and work anywhere I want.
-
-<!-- TODO: something about the state of getting a Pi here? -->
 
 It was until I realised that I should've got a personal laptop instead of having my goldfish memory remember to bring the USB-C cable.
 
@@ -28,8 +25,6 @@ I had been hosting my website on GitHub Pages, before moving it to Sourcehut. Ho
 And so begins my journey of moving my personal website to a self-hosted web server of my own, plus maybe a password manager and an internal VPN between my devices.
 
 ## Notes on [installing 64-bit Arch Linux ARM on Pi 4] and overclocking
-
-I shouldn't say the process went smoothly, otherwise this wouldn't be a multi-part story :/
 
 Once I followed the instructions to install the `aarch64` version of Arch Linux ARM, my Pi 4 kept running into kernel panics as it went through the boot process with the generic U-Boot loader. I kept around a spare USB stick with a Raspberry Pi OS installation on it so I can investigate the filesystem.
 

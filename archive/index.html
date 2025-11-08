@@ -1,0 +1,35 @@
+---
+layout: default
+---
+{% assign date_format = site.theme_config.date_format | default: "%Y-%m-%d" %}
+{% assign posts = site.posts | sort: 'date' | reverse | group_by_exp: "post", "post.date | date: '%B %Y'" %}
+
+{%- include back_link.html -%}
+
+<header>
+	<h1>all previous posts, grouped by month</h1>
+	<p>Subscribe to the <a href="/feed.xml">RSS feed</a>.</p>
+	<p>You may also want to browse the <a href="{% link archive/articles.md %}">article archive</a> only.</p>
+</header>
+<main id="content" aria-label="Content">
+	{% for month in posts %}
+		<h2>{{ month.name }}</h2>
+
+		{%- for post in month.items -%}
+			<article class="post summary">
+				<p class="metadata">
+					<time class="dateline" datetime="{{ post.date | date_to_xmlschema }}">
+						{{ post.date | date: date_format }}
+					</time>
+				</p>
+
+				{% if post.title and post.title != "" %}
+					<a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
+					<p>{{ post.excerpt }}</p>
+				{% else %}
+					{{ post.content }}
+				{% endif %}
+			</article>
+		{%- endfor -%}
+	{% endfor %}
+</main>

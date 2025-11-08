@@ -1,31 +1,35 @@
+{% assign date_format = site.theme_config.date_format | default: "%Y-%m-%d" %}
+
 {%- if include.category -%}
   	{%- assign posts = site.categories[include.category] | sort: 'date' | reverse -%}
-{%- elsif include.year -%}
-	{%- assign posts = site.posts | where_exp: "post", "post.date contains include.year" | sort: 'date' | reverse -%}
 {%- else -%}
 	{%- assign posts = site.posts | sort: 'date' | reverse -%}
 {%- endif -%}
 
 {%- if posts.size > 0 -%}
-	<ul>
-		{%- for post in posts limit: include.limit -%}
-			<li>
-				<time datetime="{{ post.date | date_to_xmlschema }}">
-				{% if site.theme_config.date_format %}
-					{{ post.date | date: site.theme_config.date_format }}
-				{% else %}
-					{{ post.date | date: "%Y-%m-%d" }}
-				{% endif %}
+	{%- for post in posts limit: include.limit -%}
+		<article class="post summary">
+			<p class="metadata">
+				<time class="dateline" datetime="{{ post.date | date_to_xmlschema }}">
+					{{ post.date | date: date_format }}
 				</time>
+				&mdash;
+			</p>
+
+			{% if post.title and post.title != "" %}
 				<a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
-			</li>
-		{%- endfor -%}
-		{%- if include.limit and posts.size > include.limit -%}
-			<li class="more">
-				<a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "See more..." }}</a>
-			</li>
-		{%- endif -%}
-	</ul>
+				<p>{{ post.excerpt }}</p>
+			{% else %}
+				{{ post.content }}
+			{% endif %}
+		</article>
+	{%- endfor -%}
+
+	{%- if include.limit and posts.size > include.limit -%}
+		<a class="more">
+			<a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "See more..." }}</a>
+		</a>
+	{%- endif -%}
 {%- else -%}
 	<p>No posts found.</p>
 {%- endif -%}

@@ -1,20 +1,25 @@
 ---
 layout: default
 ---
+{% assign date_format = site.theme_config.date_format | default: "%Y-%m-%d" %}
+
 {%- include back_link.html -%}
 
 <main id="content" aria-label="Content">
 	<article class="post">
-		<p class="metadata">
-			{% if site.theme_config.date_format %}
-				<time datetime="{{ page.date }}">{{ page.date | date: site.theme_config.date_format }}</time>
-			{% else %}
-				<time datetime="{{ page.date }}">{{ page.date | date: "%Y-%m-%d" }}</time>
-			{% endif %}
-		</p>
+		<header>
+			<p class="metadata">
+				<time class="dateline" datetime="{{ page.date }}">{{ page.date | date: date_format }}</time>
+				{% if page.last_modified_at %}
+					(last modified: <time datetime="{{ page.last_modified_at }}">{{ page.last_modified_at | date: date_format }}</time>)
+				{% endif %}
+			</p>
 
-		<h1>{{ page.title }}</h1>
+			<h1>{{ page.title }}</h1>
+		</header>
 
 		{{ content }}
+
+		<p><i>Discuss on GitHub or send a response email to</i> {{ site.email }}<i>.</i></p>
 	</article>
 </main>

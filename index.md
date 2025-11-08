@@ -3,25 +3,22 @@ layout: home
 ---
 Student, lousy programmer, tooter, Redditor and YouTube addict. [$(whoami)](/about)
 
-## recent blog posts
+## recent posts
 
-[RSS feed](/feed.xml)
+{% include post_list.html limit=4 -%}
 
-{% include post_list.html
-		limit=6
-		show_more_text="all posts"
-		show_more_url="/blog"
--%}
+...
+{:.metadata aria-hidden=""}
+
+[all posts](/archive) ([RSS feed](/feed.xml))
 
 ## what I'm probably working on
 
-October 2025:
-
+- Studying
 - Set up and self-host services on my own domain
 - Develop a [revival fork of Mammoth](https://git.sr.ht/~ducmbui/mammoth), a Mastodon client for Apple devices
 - Learn React and TypeScript to build a web client for Lemmy that mimics 2018 Reddit UI design
 - Rewrite documentation on [the BananaHackers website](https://bananahackers.net) and maintain [BananaHackers Store](https://store.bananahackers.net)
-- Watching the [Internet Archive's microfiche scanning live stream](https://www.youtube.com/watch?v=SxUjwZYBIUs)
 - Get ready for the capstone courses
 
 Contributing to projects: [joelacus/RedditEnhancer](https://github.com/joelacus/RedditEnhancer), [Just the Docs Jekyll theme](https://just-the-docs.com)
