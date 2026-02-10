@@ -1,6 +1,7 @@
 ---
 layout: archive
 which_category: article
+permalink: /archive/articles/
 ---
 # articles
 

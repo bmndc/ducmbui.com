@@ -25,7 +25,6 @@ plugins:
   - jekyll-json-feed
   - jekyll-seo-tag
   - jekyll-titles-from-headings
-  - jekyll-relative-links
 
 titles_from_headings:
   strip_title: true
@@ -43,8 +42,3 @@ defaults:
       permalink: /blog/:year/:month/:day/:title:output_ext
       title: ""
       layout: post
-
-collections:
-  vi:
-    output: true
-    permalink: /:collection/:name

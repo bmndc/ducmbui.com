@@ -1,7 +1,7 @@
 ---
 layout: home
 lang: vi
-permalink: /vi
+permalink: /vi/
 ---
 **Xin chào, mình là Đức!**
 
