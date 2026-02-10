@@ -1,46 +1,105 @@
 ---
 ---
-
+@use "sass:list";
 @use "variables";
+@use "fonts";
 
 html {
 	background: var(--background-color);
+	scroll-behavior: smooth;
 }
 
 body {
-	max-width: 45rem;
-	margin: 8px auto;
-	padding-left: 8px;
-	padding-right: 8px;
-	font-family: variables.$font-family;
+	max-width: variables.$page-width;
+	margin: 12px auto;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-family: variables.$body-font-family;
+	font-size: variables.$base-font-size;
 	color: var(--text-color);
 	line-height: 1.4;
 }
 
+/* ::selection,
+::-moz-selection {
+	background: darkslategrey;
+	color: white;
+} */
+
 menu {
-	list-style-type: "|";
-	padding: 0;
+	list-style-type: none;
+	padding-left: 0;
 }
 
 menu li {
 	display: inline-block;
-	margin-right: 2px;
+	margin-right: 8px;
 }
 
-h1, h2, h3 {
-	font-size: 1em;
+/* section {
+	border: 4px solid var(--hard-color);
+	margin: 40px -20px 24px -20px;
+	padding: 0 1rem;
+} */
+
+section h2:first-child {
+	display: inline-block;
+	margin: 0;
+	margin-bottom: -36px;
+	padding: 8px 12px;
+	background-color: var(--background-color);
+	border: 4px solid var(--hard-color);
+	transform: translateX(-40px) translateY(-20px) rotate(-3deg);
+}
+
+footer {
+	border-top: 3px dotted var(--hard-color);
+}
+
+h1,
+html[lang="en"] h2,
+html[lang="en"] h3 {
+	font-family: variables.$header-font-family;
+	font-weight: normal;
+	letter-spacing: -1px;
+}
+
+:not(header) > h1,
+h2,
+h3 {
+	margin-top: 32px;
 }
 
 a {
 	color: var(--link-color);
 }
 
-a:hover,
-a:focus {
+a:not(.avatar):hover,
+a:not(.avatar):focus {
 	text-decoration: none;
 	outline: none;
 	background-color: var(--link-color);
 	color: var(--link-hover-text-color);
+}
+
+a.avatar > img {
+	transition:
+		transform 0.1s ease-out,
+		box-shadow 0.1s ease-out;
+}
+
+a.avatar:hover > img,
+a.avatar:focus > img {
+	$shadow-depth: 12px;
+	$shadow-color: var(--link-color);
+	$shadows: ();
+
+	@for $i from 1 through $shadow-depth {
+		$shadows: list.append($shadows, #{$i}px #{$i}px 0 $shadow-color, comma);
+	}
+
+	transform: translate(-$shadow-depth, -$shadow-depth);
+	box-shadow: $shadows;
 }
 
 img {
@@ -57,6 +116,12 @@ figcaption {
 	text-align: left;
 }
 
+code {
+	padding: 2px 4px;
+	font-size: 0.875em;
+	background-color: var(--code-bg-color);
+}
+
 pre {
 	overflow-x: auto;
 }
@@ -66,18 +131,23 @@ abbr {
 }
 
 .metadata {
-	color: var(--text-secondary-color);
+	color: var(--secondary-color);
+	border-bottom: 2px dotted var(--secondary-color);
 }
 
 .skip {
-	position: absolute;
-	top: 0;
-	left: 0;
-	opacity: 0;
+	position: fixed;
+	top: 12px;
+	left: 12px;
 }
 
-.skip:focus {
-	opacity: 1;
+.skip:not(:focus) {
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
 }
 
 .language-diff .gd {
@@ -93,3 +163,48 @@ abbr {
 	left: 0;
 	color: grey;
 }
+
+@media print, (max-width: 800px) {
+	body {
+		font-size: 14px;
+	}
+
+	section {
+		border: none;
+		margin: 48px 0 1.5rem 0;
+		padding: 0;
+	}
+
+	section h2:first-child {
+		transform: translateY(-20px) rotate(-3deg);
+	}
+}
+
+/* @media (min-width: 1280px) {
+	body {
+		max-width: 75rem;
+	}
+
+	main {
+		display: flex;
+		flex-direction: row;
+		gap: 80px;
+	}
+
+	main > .left,
+	main > .right {
+		flex: 1;
+	}
+} */
+
+/* @supports (display: grid) {
+	ul#links {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+		gap: 10px;
+		padding-left: 0;
+	}
+	ul#links li {
+		list-style-type: none;
+	}
+} */

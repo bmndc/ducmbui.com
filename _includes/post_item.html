@@ -1,0 +1,8 @@
+<article class="post summary">
+    {% if include.post.title and include.post.title != "" %}
+        <a href="{{ include.post.url | relative_url }}">{{ include.post.title | downcase }}</a>
+        <p>{{ include.post.excerpt }}</p>
+    {% else %}
+        {{ include.post.content }}
+    {% endif %}
+</article>

@@ -1,0 +1,71 @@
+R&B pop, alternative, indie and electronic/dance music artists:
+  - name: AJR
+    url: https://en.wikipedia.org/wiki/AJR
+    albums:
+      - name: The Click
+        url: https://en.wikipedia.org/wiki/The_Click_(album)
+      - name: OK Orchestra
+        url: https://en.wikipedia.org/wiki/OK_Orchestra
+      - name: The Maybe Man
+        url: https://en.wikipedia.org/wiki/The_Maybe_Man
+      - name: What's No One Thinking
+  - name: Bastille
+    url: https://en.wikipedia.org/wiki/Bastille_(band)
+    albums:
+      - name: Give Me the Future + Dreams of the Past
+        url: https://en.wikipedia.org/wiki/Give_Me_the_Future
+  - name: BoyWithUke
+    url: https://en.wikipedia.org/wiki/BoyWithUke
+    albums:
+      - name: Fever Dreams
+      - name: Serotonin Dreams
+        url: https://en.wikipedia.org/wiki/Serotonin_Dreams
+      - name: "BoyWithUke: B Sides"
+  - name: Cosmo's Midnight
+    url: https://en.wikipedia.org/wiki/Cosmo%27s_Midnight
+    albums:
+      - name: Stop Thinking Start Feeling
+  - name: Crooked Colours
+    url: https://en.wikipedia.org/wiki/Crooked_Colours
+    albums:
+      - name: Tomorrows
+  - name: nimino
+    url: https://en.wikipedia.org/wiki/Nimino
+    albums:
+      - name: Creek
+  - name: OK Go
+    url: https://en.wikipedia.org/wiki/OK_Go
+    albums:
+      - name: And the Adjacent Possible
+        url: https://en.wikipedia.org/wiki/And_the_Adjacent_Possible
+  - name: Roosevelt
+    url: https://en.wikipedia.org/wiki/Roosevelt_(musician)
+    albums:
+      - name: Polydans
+        url: https://en.wikipedia.org/wiki/Polydans
+      - name: Embrace
+  - name: Still Woozy
+    url: https://en.wikipedia.org/wiki/Still_Woozy
+    albums:
+      - name: If This Isn't Nice, I Don't Know What Is
+      - name: Loveseat
+
+comedy and sci-fi TV shows:
+  - name: Doctor Who
+    url: https://en.wikipedia.org/wiki/Doctor_Who
+    note: BBC iPlayer/Disney+
+  - name: Foundation
+    url: https://en.wikipedia.org/wiki/Foundation_(TV_series)
+    note: Apple TV+, based on <a href="https://en.wikipedia.org/wiki/Foundation_(novel_series)">Isaac Asimov's Foundation book series</a>
+  - name: "Jet Lag: The Game"
+    url: https://en.wikipedia.org/wiki/Jet_Lag:_The_Game
+    note: Nebula and YouTube
+  - name: Severance
+    url: https://en.wikipedia.org/wiki/Severance_(TV_series)
+    note: Apple TV+
+  - name: Silo
+    url: https://en.wikipedia.org/wiki/Silo_(TV_series)
+    note: Apple TV+, based on <a href="https://en.wikipedia.org/wiki/Silo_(series)">Hugh Howey's Silo book series</a>
+  - name: Taskmaster UK/AU/NZ
+    url: https://en.wikipedia.org/wiki/Taskmaster_(TV_series)
+    note: Channel 4 in UK, Network Ten in AU, TVNZ, YouTube

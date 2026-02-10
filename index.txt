@@ -1,0 +1,123 @@
+= duc@website: ~/ =
+
+hello, I'm Duc
+
+Student, lousy programmer, tooter, Redditor and YouTube addict.
+
+I build and manage enterprise-scale systems, and am interested in cybersecurity
+and accessible designs. As a team leader, I plan and execute ideas with the
+work ethic and commitment to deliver high-quality results. Outside of work, I'm
+driven by the curiosity to break systems to understand how they work.
+
+You can view or print my CV at https://ducmbui.com/cv, and get in touch by
+sending me an e-mail at duc (at) ducmbui.com.
+
+blog
+----
+
+I don't write blog posts much, but an archive of all the ones I've written can
+be found at https://ducmbui.com/archive.
+
+Some posts on the blog may be localised in Vietnamese.
+
+RSS feed: https://ducmbui.com/feed.xml
+JSON feed: https://ducmbui.com/feed.json
+
+(cURL users are welcome to fetch the JSON feed!)
+
+what I'm probably working on
+----------------------------
+
+- Get ready for the capstone courses as a final-year student
+  - I'm open to work! See the section above for my CV and contact information.
+- Learn some skills on LinkedIn Learning and use up my student benefits
+- Build my cybersecurity profile with Hack the Box and TryHackMe
+- Set up and self-host services on my own domain
+- Think about this website a bit too much
+- Perhaps more outdoor physical exercises
+
+On the shelves:
+
+- Revise documentation on the BananaHackers website and maintain the
+  BananaHackers Store
+- Develop a revival fork of Mammoth, a Mastodon client for Apple devices
+- Build a web client for Lemmy that mimics 2018 Reddit UI design, using React
+  and TypeScript
+
+Contributing to open-source projects: _unfortunately none at the moment!_
+
+Or I might procrastinate and watch a lot of YouTube videos instead.
+
+[Hack the Box]: https://hackthebox.com
+[TryHackMe]: https://tryhackme.com
+[the BananaHackers website]: https://bananahackers.net
+[BananaHackers Store]: https://store.bananahackers.net
+[revival fork of Mammoth]: https://git.sr.ht/~ducmbui/mammoth
+
+how do I pronounce your name?
+-----------------------------
+
+In Vietnamese naming customs, the surname is positioned before the given name*,
+and people are referred to by their first names. My full name is Bui Minh Duc,
+thus I am called Duc, not Bui.
+
+Phonetic breakdown of my first name:
+
+- the Đ sounds like the standard English D sound;
+- the ư is an unrounded vowel, spoken with a slight smile and spreaded lips;
+- the c is unreleased and sounds like it ends in a sharp stop; you prepare to
+  make a k sound but don't actually puff air out.
+
+For English speakers, Duc rhymes with "book" or "look" but with d as the first
+letter (dook). To mimic the rising tone, say as if you're asking a quick
+question (dook?).
+
+I'm okay with variations of my name such as _duck_ or _zook_, however.
+
+*In legal papers where the given name is positioned first, I prefer writing my
+name as "Duc Minh Bui".
+
+[Vietnamese naming customs]: https://en.wikipedia.org/wiki/Vietnamese_name
+
+where to find me
+----------------
+
+I'm `ducmbui` (sometimes with a 2) most places online. If you find me elsewhere
+that's not on this list, chances are I did not claim that username in time :-(
+
+- GitHub: https://github.com/bmndc
+- GitLab: https://gitlab.com/ducmbui
+- Sourcehut: https://sr.ht/~ducmbui
+- Mastodon: https://toot.community/@duc
+  - bridged to Bluesky via fed.brid.gy:
+    https://bsky.app/profile/did:plc:dahvph3xzocj4eeddlevdtv7
+- Bluesky: https://bsky.app/profile/ducmbui.bsky.social
+- Twitter: https://twitter.com/ducmbui2
+- Instagram: https://www.instagram.com/ducmbui2
+- Threads: https://www.threads.com/@ducmbui2
+- LinkedIn: https://www.linkedin.com/in/ducmbui
+- Discord: https://discordapp.com/users/1153314543175483483 (`ducmbui`)
+- Telegram: https://t.me/ducmbui
+- Reddit: https://www.reddit.com/user/biminhc1
+  - alternative account: https://www.reddit.com/user/ducmbui
+- Digg: https://digg.com/@ducmbui
+- YouTube: https://www.youtube.com/c/ducmbui
+- Bandcamp: https://bandcamp.com/ducmbui2
+- Spotify: https://open.spotify.com/user/sx9jlycy4e63l3swpl2w3ju7z
+- Internet Archive: https://archive.org/details/@ducmbui
+- Steam: https://steamcommunity.com/id/ducmbui
+
+You can also send me an e-mail at the address above.
+
+--------------------------------------------------------------------------------
+
+This website is being served from my Raspberry Pi. For mandatory security
+purposes, the system keeps a log of your IP address, the URL you're visiting
+on, and the date and time (in UTC) you're visiting at. I keep this data private
+and never share it with anyone else.
+
+Content on this website is made available under the Creative Commons
+Attribution 4.0 International (CC-BY-4.0) licence, unless otherwise noted.
+
+Source code of this website can be viewed at
+https://git.sr.ht/~ducmbui/ducmbui.com.

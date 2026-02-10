@@ -10,5 +10,5 @@ layout: default
 <main id="content" aria-label="Content">
 	{{ content }}
 
-	{%- include post_list.html category=page.which_category -%}
+	{%- include post_list.html category=page.which_category group_by_month=page.group_by_month -%}
 </main>

@@ -22,6 +22,7 @@ sass:
 
 plugins:
   - jekyll-feed
+  - jekyll-json-feed
   - jekyll-seo-tag
   - jekyll-titles-from-headings
 
@@ -41,3 +42,8 @@ defaults:
       permalink: /blog/:year/:month/:day/:title:output_ext
       title: ""
       layout: post
+
+collections:
+  vi:
+    output: true
+    permalink: /:collection/:name

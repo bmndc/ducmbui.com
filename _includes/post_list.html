@@ -1,34 +1,62 @@
 {% assign date_format = site.theme_config.date_format | default: "%Y-%m-%d" %}
 
 {%- if include.category -%}
-  	{%- assign posts = site.categories[include.category] | sort: 'date' | reverse -%}
+	{%- assign posts = site.categories[include.category] | sort: 'date' | reverse -%}
 {%- else -%}
 	{%- assign posts = site.posts | sort: 'date' | reverse -%}
 {%- endif -%}
 
 {%- if posts.size > 0 -%}
-	{%- for post in posts limit: include.limit -%}
-		<article class="post summary">
-			<p class="metadata">
-				<time class="dateline" datetime="{{ post.date | date_to_xmlschema }}">
-					{{ post.date | date: date_format }}
-				</time>
-				&mdash;
-			</p>
+	{%- if include.group_by_month -%}
+		{%- assign grouped_by_month = posts | group_by_exp: "post", "post.date | date: '%B %Y'" -%}
 
-			{% if post.title and post.title != "" %}
-				<a href="{{ post.url | relative_url }}">{{ post.title | downcase }}</a>
-				<p>{{ post.excerpt }}</p>
-			{% else %}
-				{{ post.content }}
-			{% endif %}
-		</article>
-	{%- endfor -%}
+		{%- for month in grouped_by_month -%}
+			{%- assign grouped_by_day = month.items | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" -%}
 
-	{%- if include.limit and posts.size > include.limit -%}
-		<a class="more">
-			<a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "See more..." }}</a>
-		</a>
+			<h2>{{ month.name }}</h2>
+
+			{%- for day in grouped_by_day -%}
+				<section>
+					<p class="metadata">
+						<time class="dateline" datetime="{{ day.items[0].date | date_to_xmlschema }}">
+							{{ day.items[0].date | date: date_format }}
+						</time>
+					</p>
+
+					{%- for post in day.items -%}
+						{% include post_item.html post=post %}
+					{%- endfor -%}
+				</section>
+			{%- endfor -%}
+		{%- endfor -%}
+	{%- else -%}
+		{%- if include.limit -%}
+			{%- assign visible_posts = posts | slice: 0, include.limit -%}
+		{%- else -%}
+			{%- assign visible_posts = posts -%}
+		{%- endif -%}
+
+		{%- assign grouped_by_day = visible_posts | group_by_exp: "post", "post.date | date: '%Y-%m-%d'" -%}
+
+		{%- for day in grouped_by_day -%}
+			<section>
+				<p class="metadata">
+					<time class="dateline" datetime="{{ day.items[0].date | date_to_xmlschema }}">
+						{{ day.items[0].date | date: date_format }}
+					</time>
+				</p>
+
+				{%- for post in day.items -%}
+					{% include post_item.html post=post %}
+				{%- endfor -%}
+			</section>
+		{%- endfor -%}
+
+		{%- if include.limit and posts.size > include.limit -%}
+			<a class="more">
+				<a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "See more..." }}</a>
+			</a>
+		{%- endif -%}
 	{%- endif -%}
 {%- else -%}
 	<p>No posts found.</p>

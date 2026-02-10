@@ -4,6 +4,7 @@ source "https://rubygems.org"
 
 gem "jekyll"
 gem "jekyll-feed"
+gem "jekyll-json-feed"
 gem "jekyll-seo-tag"
 gem "jekyll-titles-from-headings", "~> 0.5.3"
 

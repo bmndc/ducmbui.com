@@ -2,4 +2,6 @@
 layout: archive
 which_category: article
 ---
-# all articles
+# articles
+
+[all posts / tất cả bài viết]({% link archive/index.md %})

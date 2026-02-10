@@ -1,22 +1,28 @@
-$font-family: Helvetica, Arial, sans-serif;
+$header-font-family: 'Departure Mono', monospace;
+$body-font-family: Helvetica, Arial, sans-serif;
+$base-font-size: 0.9rem;
+$page-width: 45rem;
 
+/* begin theme-specific variables */
 :root {
 	// Colour palette for light mode
 	--background-color: white;
-	--text-color: black;
-	--text-secondary-color: #505050;
-	--link-color: blue;
+	--text-color: #040415;
+	--secondary-color: #606060;
+	--code-bg-color: whitesmoke;
+	--link-color: #138;
 	--link-hover-text-color: white;
 	--gd-color: red;
 	--gi-color: green;
 }
 
 @mixin dark-appearance {
-	// Colour palette for dark mode
-	--background-color: black;
-	--text-color: white;
-	--text-secondary-color: darkgrey;
-	--link-color: yellow;
+	/* Colour palette for dark mode */
+	--background-color: #131616;
+	--text-color: whitesmoke;
+	--secondary-color: grey;
+	--code-bg-color: #222;
+	--link-color: lightsteelblue;
 	--link-hover-text-color: black;
 	--gd-color: red;
 	--gi-color: lightgreen;
@@ -31,3 +37,4 @@ html[a="dark"] {
 		@include dark-appearance;
 	}
 }
+/* end theme-specific variables */
