@@ -13,7 +13,7 @@ You can view or print my <abbr title="curriculum vitae">CV</abbr> [here]({% link
 [Phiên bản tiếng Việt]({% link index.vi.md %})
 
 [blog]({% link archive/index.md %})
-----------------
+-----------------------------------
 
 I don't write blog posts much, but here's an archive of all the ones I've written.
 

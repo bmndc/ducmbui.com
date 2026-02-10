@@ -14,7 +14,7 @@ Bạn có thể xem và in <abbr title="curriculum vitae, lý lịch công việ
 [English version]({% link index.en.md %})
 
 [blog]({% link archive/index.md %})
-----------------
+-----------------------------------
 
 Mình không thường xuyên viết blog, nhưng đây là kho lưu trữ tất cả bài mình viết.
 

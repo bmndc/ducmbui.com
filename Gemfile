@@ -7,6 +7,7 @@ gem "jekyll-feed"
 gem "jekyll-json-feed"
 gem "jekyll-seo-tag"
 gem "jekyll-titles-from-headings", "~> 0.5.3"
+gem "jekyll-relative-links"
 
 group :development do
   gem "webrick"
