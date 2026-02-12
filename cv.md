@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /cv
+permalink: /cv/
 ---
 {% assign content = page.content | markdownify %}
 

@@ -16,9 +16,8 @@ blog
 ----
 
 I don't write blog posts much, but an archive of all the ones I've written can
-be found at https://ducmbui.com/archive.
-
-Some posts on the blog may be localised in Vietnamese.
+be found at https://ducmbui.com/archive. Please note that some posts on the
+blog may be localised in Vietnamese.
 
 RSS feed: https://ducmbui.com/feed.xml
 JSON feed: https://ducmbui.com/feed.json

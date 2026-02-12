@@ -15,9 +15,7 @@ You can view or print my <abbr title="curriculum vitae">CV</abbr> [here]({% link
 [blog]({% link archive/index.md %})
 -----------------------------------
 
-I don't write blog posts much, but here's an archive of all the ones I've written.
-
-Some posts on the blog may be localised in Vietnamese.
+I don't write blog posts much, but here's an archive of all the ones I've written. Please note that some posts on the blog may be localised in Vietnamese.
 
 [RSS feed](/feed.xml) / [JSON feed](/feed.json)
 
@@ -93,6 +91,6 @@ This website is being served from my Raspberry Pi. For mandatory security purpos
 
 Content on this website is made available under the Creative Commons Attribution 4.0 International (CC-BY-4.0) licence, unless otherwise noted.
 
-Source code of this website can be viewed [here](https://git.sr.ht/~ducmbui/ducmbui.com).
+Source code of the website can be viewed [here](https://git.sr.ht/~ducmbui/ducmbui.com).
 
 Departure Mono font is made by Helena Zhang and is used under the SIL Open Font Licence.

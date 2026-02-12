@@ -16,9 +16,7 @@ Bạn có thể xem và in <abbr title="curriculum vitae, lý lịch công việ
 [blog]({% link archive/index.md %})
 -----------------------------------
 
-Mình không thường xuyên viết blog, nhưng đây là kho lưu trữ tất cả bài mình viết.
-
-Phần lớn các bài viết trên blog được viết bằng tiếng Anh.
+Mình không thường xuyên viết blog, nhưng đây là kho lưu trữ tất cả bài mình đã viết. Phần lớn các bài viết trên blog được viết bằng tiếng Anh.
 
 Bạn có thể đăng ký nhận cập nhật qua [RSS](/feed.xml) hoặc [JSON](/feed.json).
 
@@ -75,6 +73,6 @@ Bạn đang xem trang web này từ chiếc Raspberry Pi của mình! Vì lý do
 
 Toàn bộ nội dung trên trang web này được phát hành theo Giấy phép Creative Commons Attribution 4.0 International (CC-BY-4.0), trừ khi có ghi chú khác. Bạn đọc có thể tự do sử dụng, chỉnh sửa và chia sẻ lại nội dung, miễn là có trích dẫn nguồn gốc.
 
-Bạn có thể xem mã nguồn của trang web này tại [đây](https://git.sr.ht/~ducmbui/ducmbui.com).
+Bạn có thể xem mã nguồn của trang web tại [đây](https://git.sr.ht/~ducmbui/ducmbui.com).
 
 Phông chữ Departure Mono được thiết kế bởi Helena Zhang và sử dụng theo Giấy phép Phông chữ Mở SIL.
